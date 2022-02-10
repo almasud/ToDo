@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ContentView: View {
+    @StateObject
+    var realmManager = RealmManager()
     @State
     private var isShowAddTAsk : Bool = false
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            TasksView()
+            TasksView().environmentObject(realmManager)
             AddButton().padding()
                 .onTapGesture {
                     isShowAddTAsk.toggle()
@@ -22,7 +25,7 @@ struct ContentView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(hue: 0.086, saturation: 0.141, brightness: 0.972))
         .sheet(isPresented: $isShowAddTAsk) {
-            AddTaskView()
+            AddTaskView().environmentObject(realmManager)
         }
     }
 }
