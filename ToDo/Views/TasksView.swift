@@ -37,7 +37,7 @@ struct TasksView: View {
                             }
                     }
                 }
-                .listSectionSeparator(.hidden)
+                .listRowSeparator(.hidden)
             }
             .onAppear {
                 UITableView.appearance().backgroundColor

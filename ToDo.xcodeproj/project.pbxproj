@@ -87,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9845D01E27B547C8006DA8F2 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				9845D01527B4E5F0006DA8F2 /* RealmManager.swift */,
+				9845D01727B4EB86006DA8F2 /* Task.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
 		988A7D8227B22A9A00CEF1FD = {
 			isa = PBXGroup;
 			children = (
@@ -110,13 +119,12 @@
 		988A7D8D27B22A9A00CEF1FD /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				9845D01E27B547C8006DA8F2 /* database */,
 				988A7DBB27B243CD00CEF1FD /* Components */,
 				988A7DB827B22ED000CEF1FD /* Views */,
 				988A7D8E27B22A9A00CEF1FD /* ToDoApp.swift */,
 				988A7D9227B22A9E00CEF1FD /* Assets.xcassets */,
 				988A7D9427B22A9E00CEF1FD /* Preview Content */,
-				9845D01527B4E5F0006DA8F2 /* RealmManager.swift */,
-				9845D01727B4EB86006DA8F2 /* Task.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
